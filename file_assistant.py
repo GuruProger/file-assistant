@@ -63,7 +63,7 @@ class FileAssistant:
             if any([file.endswith(endswith) for endswith in self._file_extensions])
         }
 
-    def _is_valid_directory(self, current_path: str, patterns) -> bool:
+    def _is_valid_directory(self, current_path: str, patterns: tuple | list | set | frozenset) -> bool:
         """
         Checks if the current path matches one of the specified directory patterns.
 
